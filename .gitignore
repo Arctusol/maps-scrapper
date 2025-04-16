@@ -48,3 +48,11 @@ Thumbs.db
 
 # Generated CSV files
 *.csv
+
+# Sensitive files
+src/scrapping-api-456807-2449204dfef3.json
+src/config.json
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
