@@ -11,16 +11,16 @@ from google.oauth2.service_account import Credentials
 
 # Import project modules
 try:
-    from src.google_maps_scraper.utils import parse_google_maps_url, calculate_bounding_box # Added calculate_bounding_box
-    from src.google_maps_scraper.core import run_grid_search_and_save, CSV_HEADERS_FR
-    from src.google_maps_scraper.sheets_uploader import upload_csv_to_sheets, validate_gsheet_access
+    from src.utils import parse_google_maps_url, calculate_bounding_box # Added calculate_bounding_box
+    from src.core import run_grid_search_and_save, CSV_HEADERS_FR
+    from src.sheets_uploader import upload_csv_to_sheets, validate_gsheet_access
 except ImportError:
     # Add src to path if running streamlit run streamlit_app.py from root
     import sys
     sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-    from google_maps_scraper.utils import parse_google_maps_url, calculate_bounding_box # Added calculate_bounding_box
-    from google_maps_scraper.core import run_grid_search_and_save, CSV_HEADERS_FR
-    from google_maps_scraper.sheets_uploader import upload_csv_to_sheets, validate_gsheet_access
+    from src.utils import parse_google_maps_url, calculate_bounding_box # Added calculate_bounding_box
+    from src.core import run_grid_search_and_save, CSV_HEADERS_FR
+    from src.sheets_uploader import upload_csv_to_sheets, validate_gsheet_access
 
 
 # --- Logging Configuration ---

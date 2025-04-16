@@ -3,7 +3,7 @@ name = "google-maps-scraper"
 version = "0.1.0"
 description = "A tool for scraping Google Maps data."
 packages = [
-    { include = "google_maps_scraper", from = "src" },
+    { include = "src"},
 ]
 authors = ["Ignas Šimkūnas <ignassimkunas@gmail.com>"]
 readme = "README.md"
