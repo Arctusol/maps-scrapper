@@ -447,8 +447,8 @@ with col_load:
                  default_conf.update(loaded_config) # Overwrite defaults with loaded values
                  st.session_state.config = default_conf
                  st.success(f"Configuration chargée depuis '{uploaded_file.name}'.")
-                 # Use experimental rerun for a cleaner update without full reload if possible
-                 st.experimental_rerun()
+                 # Use rerun for a cleaner update without full reload
+                 st.rerun()
             else:
                  st.error("Erreur: Le fichier chargé ne contient pas une configuration valide (objet JSON attendu).")
 
